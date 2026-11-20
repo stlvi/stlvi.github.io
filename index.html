@@ -228,7 +228,7 @@ label.f textarea{min-height:84px;resize:vertical}
     <div class="wrap">
       <div class="head">
         <h2>Produits</h2>
-        <p class="muted">Chaque produit existe dans plusieurs marques. Le prix dépend de la marque et du modèle choisis : les montants affichés sont donnés à titre indicatif, TTC et livraison comprise. Demandez votre devis pour connaître le prix exact.</p>
+        <p class="muted">Chaque produit existe dans plusieurs marques. Le prix dépend de la marque et du modèle choisis : les montants affichés sont donnés à titre indicatif, hors taxes (HT) et livraison comprise. Demandez votre devis pour connaître le prix exact.</p>
       </div>
       <div class="tabs" role="group" aria-label="Filtrer par famille" id="tabs"></div>
       <div class="grid" id="grid"></div>
@@ -365,6 +365,8 @@ const P = [
    src:"Contenu exact du carton précisé sur devis."}
 ];
 
+/* Prix du catalogue exprimés en HT (base TTC ÷ 1,2, arrondi à 5 €) */
+P.forEach(p=>p.opts.forEach(o=>{o.price=Math.round(o.price/1.2/5)*5}));
 const eur = n => n.toLocaleString("fr-FR") + " €";
 const $ = s => document.querySelector(s);
 const tagHTML = s => s==="ferme" ? '<span class="tag ferme">Prix ferme</span>' : '<span class="tag indic">Prix indicatif</span>';
@@ -387,7 +389,7 @@ function renderGrid(){
     const img = p.img ? `<img src="${p.img}" alt="" loading="lazy" width="640" height="400">` : `<div style="aspect-ratio:16/10;background:var(--givre-clair)"></div>`;
     return `<button type="button" class="prod" data-id="${p.id}" aria-label="${p.name}, voir la fiche">
       ${img}<div class="body"><span class="fam">${f}</span><h3>${p.name}</h3><span class="keys">${p.keys}</span>
-      <div class="foot"><span class="price">${pre}${eur(fromPrice(p))}<small>TTC livré</small></span><span class="fam">Sur devis</span></div></div></button>`;
+      <div class="foot"><span class="price">${pre}${eur(fromPrice(p))}<small>HT livré</small></span><span class="fam">Sur devis</span></div></div></button>`;
   }).join("");
   const m = MORE[fam];
   $("#more").hidden = !m; $("#more").textContent = m || "";
@@ -407,7 +409,7 @@ function openSheet(id){
       <table class="specs"><tbody>${p.specs.map(s=>`<tr><th scope="row">${s[0]}</th><td>${s[1]}</td></tr>`).join("")}</tbody></table>
       
       <div class="opts" role="radiogroup" aria-label="Choisir la version">${opts}</div>
-      <p class="fine">Matériel neuf en carton d'origine. Prix indicatif TTC, livraison comprise : il varie selon la marque et le modèle, le prix exact vous est donné sur devis.</p>
+      <p class="fine">Matériel neuf en carton d'origine. Prix indicatif HT, livraison comprise : il varie selon la marque et le modèle, le prix exact vous est donné sur devis.</p>
       <div class="add">
         <div class="qty"><button type="button" id="qm" aria-label="Retirer une unité">−</button><output id="qv" aria-live="polite">1</output><button type="button" id="qp" aria-label="Ajouter une unité">+</button></div>
         <button type="button" class="primary" id="addBtn">Ajouter à ma demande</button>
@@ -444,8 +446,8 @@ function renderLines(){
   let tot = 0;
   $("#lines").innerHTML = lines.map((l,k)=>{
     const p = P.find(x=>x.id===l.id), o = p.opts[l.i]; tot += o.price*l.q;
-    return `<div class="line"><b>${l.q} × ${p.name}</b><button class="rm" data-k="${k}">Retirer</button><span class="sub">${o.label} · ≈ ${eur(o.price*l.q)} TTC</span></div>`;
-  }).join("") + `<div class="total"><span>Total indicatif</span><span>≈ ${eur(tot)} TTC</span></div>`;
+    return `<div class="line"><b>${l.q} × ${p.name}</b><button class="rm" data-k="${k}">Retirer</button><span class="sub">${o.label} · ≈ ${eur(o.price*l.q)} HT</span></div>`;
+  }).join("") + `<div class="total"><span>Total indicatif</span><span>≈ ${eur(tot)} HT</span></div>`;
 }
 $("#lines").addEventListener("click", e=>{const b=e.target.closest(".rm"); if(!b) return; lines.splice(+b.dataset.k,1); save(); renderLines();});
 
@@ -462,7 +464,7 @@ function buildText(){
   let t = "Bonjour STLVI, je souhaite un devis.\n";
   if(who) t += "De : "+who+"\n";
   if(where) t += "Chantier : "+where+"\n";
-  lines.forEach(l=>{ const p=P.find(x=>x.id===l.id), o=p.opts[l.i]; t += `- ${l.q} × ${p.name} (${o.label}), ≈ ${eur(o.price)} TTC l'unité\n`; });
+  lines.forEach(l=>{ const p=P.find(x=>x.id===l.id), o=p.opts[l.i]; t += `- ${l.q} × ${p.name} (${o.label}), ≈ ${eur(o.price)} HT l'unité\n`; });
   if(free) t += "Précisions : "+free+"\n";
   return t;
 }
