@@ -365,8 +365,6 @@ const P = [
    src:"Contenu exact du carton précisé sur devis."}
 ];
 
-/* Prix du catalogue exprimés en HT (base TTC ÷ 1,2, arrondi à 5 €) */
-P.forEach(p=>p.opts.forEach(o=>{o.price=Math.round(o.price/1.2/5)*5}));
 const eur = n => n.toLocaleString("fr-FR") + " €";
 const $ = s => document.querySelector(s);
 const tagHTML = s => s==="ferme" ? '<span class="tag ferme">Prix ferme</span>' : '<span class="tag indic">Prix indicatif</span>';
