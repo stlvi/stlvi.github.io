@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STLVI · Clim et pompes à chaleur livrées le samedi</title>
+<meta name="description" content="STLVI fournit les installateurs des Hauts-de-France et de Belgique : climatisation multi-split, pompes à chaleur air-eau, solaire combiné et ballons thermodynamiques, livrés le samedi sur chantier.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STLVI">
+<meta property="og:title" content="STLVI · Clim et pompes à chaleur livrées le samedi">
+<meta property="og:description" content="Matériel neuf de grandes marques pour installateurs : multi-split, PAC air-eau, solaire, ballons thermodynamiques. Lille et Belgique, paiement à la livraison.">
+<meta property="og:image" content="https://stlvi.github.io/stlvi.fr/img/apercu.jpg">
+<meta property="og:url" content="https://stlvi.github.io/stlvi.fr/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-carre.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --nuit:#0E1E2C; --nuit-2:#1A3045;
+  --cuivre:#C8682F; --cuivre-fonce:#A9531F; --cuivre-clair:#F6E6DA;
+  --givre:#8FC3DA; --givre-clair:#E6F1F6;
+  --beton:#F1F2F0; --blanc:#FFFFFF;
+  --texte:#1B2733; --gris:#56626E; --trait:#D7DCE0;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow","Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--beton);color:var(--texte);font:17px/1.55 var(--body)}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cuivre);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,4vw,2.9rem)}
+p{margin:0}
+.muted{color:var(--gris)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* En-tête : trois liens et la demande, rien d'autre */
+header{position:sticky;top:0;z-index:20;background:var(--nuit);color:#fff}
+.bar{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.brand svg{width:40px;height:40px}
+.brand b{font:800 1.7rem/1 var(--display);letter-spacing:.06em}
+.nav{display:flex;gap:26px}
+.nav a{text-decoration:none;font-weight:600;color:#D5E2EA;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="true"]{color:#fff;border-color:var(--givre)}
+.basket-btn{display:flex;align-items:center;gap:10px;background:var(--cuivre);color:#fff;border:0;border-radius:999px;padding:10px 18px;font-weight:700;cursor:pointer}
+.basket-btn:hover{background:var(--cuivre-fonce)}
+.basket-btn .n{min-width:24px;height:24px;border-radius:12px;background:#fff;color:var(--cuivre-fonce);display:grid;place-items:center;font-size:.85rem}
+@media (max-width:760px){.nav{display:none}.bar{gap:12px}}
+
+/* Accroche */
+.hero{background:var(--nuit);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:64px}
+.hero h1{font-size:clamp(2.7rem,6.2vw,5rem);letter-spacing:.005em}
+.hero h1 .loop{display:block;height:6px;width:148px;margin:22px 0 0;border-radius:3px;background:linear-gradient(90deg,var(--cuivre) 0 50%,var(--givre) 50% 100%)}
+.hero p{color:#C9D7E1;font-size:1.15rem;max-width:46ch;margin-top:22px}
+.hero .go{display:inline-block;margin-top:30px;background:#fff;color:var(--nuit);padding:15px 26px;border-radius:999px;font-weight:700;text-decoration:none}
+.hero .go:hover{background:var(--givre-clair)}
+.hero figure{margin:0;position:relative}
+.hero figure img{border-radius:18px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.hero figcaption{position:absolute;left:14px;bottom:12px;font-size:.8rem;color:#fff;background:rgba(14,30,44,.7);padding:3px 9px;border-radius:6px}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-top:36px}}
+
+/* Trois engagements, en ligne, sans cartes */
+.promise{background:var(--blanc);border-bottom:1px solid var(--trait)}
+.promise ul{list-style:none;margin:0;padding:22px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.promise li{display:flex;gap:14px;align-items:flex-start}
+.promise svg{flex:none;width:30px;height:30px;color:var(--cuivre)}
+.promise b{display:block;font-size:1.05rem}
+.promise span{color:var(--gris);font-size:.95rem}
+@media (max-width:760px){.promise ul{grid-template-columns:1fr}}
+
+/* Catalogue */
+section{padding:64px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+.head p{max-width:54ch}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}
+.tabs button{border:1.5px solid var(--trait);background:var(--blanc);border-radius:999px;padding:9px 16px;font-weight:600;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--nuit);border-color:var(--nuit);color:#fff}
+.tabs button .c{color:var(--gris);font-weight:500;margin-left:4px}
+.tabs button[aria-pressed="true"] .c{color:var(--givre)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.prod{display:flex;flex-direction:column;text-align:left;background:var(--blanc);border:1px solid var(--trait);border-radius:14px;overflow:hidden;cursor:pointer;padding:0;transition:border-color .15s}
+.prod:hover{border-color:var(--nuit)}
+.prod img{aspect-ratio:16/10;object-fit:cover;width:100%;background:var(--givre-clair)}
+.prod .body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.prod .fam{font-size:.88rem;color:var(--gris)}
+.prod h3{font-size:1.55rem}
+.prod .keys{color:var(--gris);font-size:.95rem}
+.prod .foot{margin-top:auto;padding-top:12px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.price{font:800 1.6rem/1 var(--display)}
+.price small{font:500 .85rem var(--body);color:var(--gris);margin-left:4px}
+.tag{font-size:.8rem;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.tag.ferme{background:#E2F2EA;color:#17603F}
+.tag.indic{background:var(--cuivre-clair);color:#8A4013}
+.more{margin-top:22px;padding:16px 18px;border-left:4px solid var(--givre);background:var(--givre-clair);border-radius:0 10px 10px 0}
+.note{margin-top:28px;font-size:.92rem;color:var(--gris);max-width:80ch}
+
+/* Fiche produit */
+dialog{border:0;padding:0;border-radius:18px;width:min(920px,94vw);max-height:92vh;color:var(--texte);background:var(--blanc)}
+dialog::backdrop{background:rgba(14,30,44,.6)}
+.sheet{display:grid;grid-template-columns:.9fr 1.1fr}
+.sheet .pic{background:var(--givre-clair);position:relative}
+.sheet .pic img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.sheet .pic small{position:absolute;left:12px;bottom:10px;font-size:.78rem;background:rgba(255,255,255,.85);padding:2px 8px;border-radius:6px}
+.sheet .info{padding:26px 26px 22px;overflow:auto;max-height:92vh}
+.sheet h3{font-size:2rem;padding-right:40px}
+.sheet .model{color:var(--gris);margin-top:4px}
+.close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:var(--beton);cursor:pointer;font-size:1.4rem;line-height:1}
+.specs{width:100%;border-collapse:collapse;margin:18px 0 6px;font-size:.95rem}
+.specs th{text-align:left;font-weight:600;color:var(--gris);padding:7px 12px 7px 0;width:42%;vertical-align:top}
+.specs td{padding:7px 0}
+.specs tr+tr{border-top:1px solid var(--trait)}
+.src{font-size:.82rem;color:var(--gris)}
+.opts{display:grid;gap:8px;margin:18px 0 0}
+.opt{display:flex;align-items:center;gap:12px;border:1.5px solid var(--trait);border-radius:12px;padding:12px 14px;cursor:pointer}
+.opt:has(input:checked){border-color:var(--nuit);background:var(--givre-clair)}
+.opt input{accent-color:var(--nuit);width:18px;height:18px}
+.opt .l{flex:1}
+.opt .p{font:800 1.35rem/1 var(--display)}
+.add{display:flex;gap:12px;align-items:center;margin-top:18px;flex-wrap:wrap}
+.qty{display:flex;align-items:center;border:1.5px solid var(--trait);border-radius:999px}
+.qty button{width:40px;height:44px;border:0;background:none;font-size:1.3rem;cursor:pointer}
+.qty output{min-width:28px;text-align:center;font-weight:700}
+.primary{border:0;background:var(--cuivre);color:#fff;font-weight:700;padding:13px 22px;border-radius:999px;cursor:pointer}
+.primary:hover{background:var(--cuivre-fonce)}
+.fine{font-size:.84rem;color:var(--gris);margin-top:12px}
+@media (max-width:760px){.sheet{grid-template-columns:1fr}.sheet .pic img{min-height:0;aspect-ratio:16/9}}
+
+/* Comment ça marche : une vraie séquence */
+.how{background:var(--blanc)}
+.steps{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:s}
+.steps li{counter-increment:s;padding-top:58px;position:relative}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;font:800 3rem/1 var(--display);color:var(--cuivre)}
+.steps b{display:block;font-size:1.15rem;margin-bottom:4px}
+.zone{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.zone img{border-radius:16px;aspect-ratio:16/10;object-fit:cover}
+@media (max-width:760px){.steps,.zone{grid-template-columns:1fr}}
+
+/* Contact et pied de page */
+footer{background:var(--nuit);color:#C9D7E1;padding:46px 0 30px;font-size:.95rem}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}
+footer h3{color:#fff;font-size:1.4rem;margin-bottom:8px}
+footer a{color:#fff}
+footer .legal{margin-top:30px;padding-top:18px;border-top:1px solid #24405A;font-size:.82rem;color:#8EA2B3}
+@media (max-width:760px){footer .cols{grid-template-columns:1fr}}
+
+/* Panneau « Ma demande » : le seul endroit où l'on envoie */
+.drawer{position:fixed;inset:0 0 0 auto;width:min(440px,100vw);background:var(--blanc);z-index:40;transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column;box-shadow:-20px 0 40px rgba(14,30,44,.25)}
+.drawer.open{transform:none}
+.scrim{position:fixed;inset:0;background:rgba(14,30,44,.5);z-index:39;opacity:0;pointer-events:none;transition:opacity .2s}
+.scrim.open{opacity:1;pointer-events:auto}
+.drawer .top{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border-bottom:1px solid var(--trait)}
+.drawer .top h2{font-size:2rem}
+.drawer .top .close{position:static}
+.drawer .mid{flex:1;overflow:auto;padding:18px 22px}
+.line{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:12px 0;border-bottom:1px solid var(--trait)}
+.line b{font-size:1rem}
+.line .sub{color:var(--gris);font-size:.88rem}
+.line .rm{grid-row:span 2;align-self:center;border:0;background:none;color:var(--gris);text-decoration:underline;cursor:pointer}
+.empty{color:var(--gris);padding:6px 0 10px}
+.total{display:flex;justify-content:space-between;padding:14px 0 4px;font-weight:700}
+.fields{display:grid;gap:12px;margin-top:16px}
+label.f{display:grid;gap:5px;font-weight:600;font-size:.92rem}
+label.f input,label.f textarea{font:inherit;padding:10px 12px;border:1.5px solid var(--trait);border-radius:10px;background:var(--beton);color:var(--texte)}
+label.f textarea{min-height:84px;resize:vertical}
+.drawer .bot{padding:16px 22px 22px;border-top:1px solid var(--trait)}
+.drawer .bot .primary{width:100%;display:flex;justify-content:center;gap:10px;align-items:center;padding:15px}
+.drawer .bot svg{width:20px;height:20px}
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:var(--nuit);color:#fff;padding:12px 18px;border-radius:12px;z-index:50;transition:transform .25s}
+.toast.show{transform:translate(-50%,0)}
+</style>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#0E1E2C" stroke="#2A4560" stroke-width="2"/><path d="M42 21.5 A10 10 0 1 0 32 31.5" fill="none" stroke="#C8682F" stroke-width="6.5" stroke-linecap="round"/><path d="M32 31.5 A10 10 0 1 1 22 41.5" fill="none" stroke="#8FC3DA" stroke-width="6.5" stroke-linecap="round"/><circle cx="32" cy="31.5" r="3.2" fill="#fff"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c0-.1-.2-.2-.4-.3Z"/></symbol>
+  <symbol id="truck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M2 6h11v10H2zM13 9h4.5L21 12.5V16h-8z"/><circle cx="6" cy="17.5" r="1.8" fill="#fff" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17.5" r="1.8" fill="#fff" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="hand" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 13h4l3 2h4a1.5 1.5 0 0 1 0 3H9m5-1 5-2.5a1.6 1.6 0 0 1 2 2.3L15 21H3"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="M14 3.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/></symbol>
+  <symbol id="box" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5zM3 7.5 12 12l9-4.5M12 12v9"/></symbol>
+  <symbol id="tag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 12V3h9l9 9-9 9Z"/><circle cx="7.5" cy="7.5" r="1.6" fill="currentColor"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="STLVI, haut de page"><svg><use href="#mark"/></svg><b>STLVI</b></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#produits">Produits</a>
+      <a href="#livraison">Livraison</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="basket-btn" id="openBasket" aria-controls="drawer">Ma demande <span class="n" id="count" aria-live="polite">0</span></button>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Le matériel de vos chantiers, livré le samedi.<span class="loop" aria-hidden="true"></span></h1>
+        <p>Climatisation multi-split, pompes à chaleur air-eau, solaire combiné et ballons thermodynamiques des grandes marques. Du matériel neuf, en carton d'origine, pour les installateurs autour de Lille et en Belgique.</p>
+        <a class="go" href="#produits">Voir les produits</a>
+      </div>
+      <figure><img src="img/van.jpg" alt="Utilitaire STLVI chargé de groupes extérieurs devant un chantier" width="1200" height="900"></figure>
+    </div>
+  </div>
+
+  <div class="promise">
+    <ul class="wrap">
+      <li><svg><use href="#box"/></svg><div><b>Matériel neuf, en carton d'origine</b><span>Uniquement du neuf : jamais d'occasion ni de reconditionné.</span></div></li>
+      <li><svg><use href="#truck"/></svg><div><b>Livraison le samedi sur chantier</b><span>Environ 90 km autour de Lille, Belgique frontalière comprise.</span></div></li>
+      <li><svg><use href="#hand"/></svg><div><b>Paiement à la livraison</b><span>Virement instantané ou carte, sans ouverture de compte.</span></div></li>
+    </ul>
+  </div>
+
+  <section id="produits">
+    <div class="wrap">
+      <div class="head">
+        <h2>Produits</h2>
+        <p class="muted">Chaque produit existe dans plusieurs marques. Le prix dépend de la marque et du modèle choisis : les montants affichés sont donnés à titre indicatif, TTC et livraison comprise. Demandez votre devis pour connaître le prix exact.</p>
+      </div>
+      <div class="tabs" role="group" aria-label="Filtrer par famille" id="tabs"></div>
+      <div class="grid" id="grid"></div>
+      <div class="more" id="more" hidden></div>
+      <p class="note">Marques disponibles : Mitsubishi Electric, Daikin, Panasonic, LG, Airwell, Atlantic, Bosch, Samsung, Haier, Ariston, Qlima, Thaleos, Blaupunkt, Beko. Vous cherchez une marque ou un modèle précis ? Indiquez-le dans votre demande. Visuels non contractuels.</p>
+    </div>
+  </section>
+
+  <section class="how" id="livraison">
+    <div class="wrap">
+      <h2>Comment commander</h2>
+      <ol class="steps">
+        <li><b>Composez votre demande</b><span class="muted">Ajoutez les produits et les quantités, ou décrivez votre besoin. Une seule demande pour tout le chantier.</span></li>
+        <li><b>Recevez votre devis</b><span class="muted">Nous confirmons sur WhatsApp le modèle exact, la disponibilité et le prix définitif.</span></li>
+        <li><b>Faites-vous livrer le samedi</b><span class="muted">Le matériel arrive neuf, dans son carton d'origine, sur le chantier. Vous payez à la réception.</span></li>
+      </ol>
+      <div class="zone">
+        <img src="img/hero.jpg" alt="Groupes extérieurs de climatisation et de pompe à chaleur prêts à être livrés" loading="lazy" width="1200" height="750">
+        <div>
+          <h3 style="font-size:1.8rem">Où nous livrons</h3>
+          <p class="muted" style="margin-top:10px">Métropole lilloise, Nord et Pas-de-Calais proches, et Belgique frontalière : Mouscron, Tournai, Comines, Courtrai, Menin, Ypres, Ath, Mons. Au-delà d'environ 90 km de Lille, demandez-nous : une tournée est possible si plusieurs livraisons peuvent être groupées.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>STLVI</h3>
+        <p>Matériel de chauffage, climatisation et eau chaude pour les installateurs.</p>
+      </div>
+      <div>
+        <h3>Nous joindre</h3>
+        <p>WhatsApp et téléphone : <a href="tel:+33745343594">07 45 34 35 94</a><br>Depuis la Belgique : +33 7 45 34 35 94<br>E-mail : <a href="mailto:jordancarelmbatchou@gmail.com">jordancarelmbatchou@gmail.com</a></p>
+      </div>
+      <div>
+        <h3>Livraisons</h3>
+        <p>Le samedi, sur rendez-vous, autour de Lille et en Belgique frontalière.</p>
+      </div>
+    </div>
+    <p class="legal">STLVI, SAS au capital de 1 000 €, 89 rue du Docteur Jenner, 59800 Lille. SIREN 943 313 890. TVA FR50 943 313 890. Présidente : Jessika Fosso Donfack. Les marques citées appartiennent à leurs propriétaires respectifs.</p>
+  </div>
+</footer>
+
+<dialog id="sheet" aria-labelledby="sheetTitle"><div class="sheet" id="sheetBody"></div></dialog>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-labelledby="drawerTitle" aria-hidden="true">
+  <div class="top"><h2 id="drawerTitle">Ma demande</h2><button class="close" id="closeBasket" aria-label="Fermer ma demande">×</button></div>
+  <div class="mid">
+    <div id="lines"></div>
+    <div class="fields">
+      <label class="f">Entreprise et prénom<input id="who" autocomplete="organization" placeholder="Ex. Dupont Clim, Marc"></label>
+      <label class="f">Ville du chantier<input id="where" placeholder="Ex. Tournai"></label>
+      <label class="f">Autre besoin ou précision<textarea id="free" placeholder="Ex. un penta split Airwell, 2 ballons de 200 L, date souhaitée"></textarea></label>
+    </div>
+  </div>
+  <div class="bot">
+    <button class="primary" id="send"><svg><use href="#wa"/></svg>Envoyer sur WhatsApp</button>
+    <p class="fine" style="text-align:center;margin-top:10px">ou <a href="#" id="sendMail">envoyer par e-mail</a></p>
+    <p class="fine">Votre demande s'ouvre prête à envoyer. Rien n'est commandé avant votre accord sur le devis.</p>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const WA = "33745343594";
+const MAIL = "jordancarelmbatchou@gmail.com";
+const FAMILIES = [
+  {id:"clim", name:"Climatisation multi-split"},
+  {id:"pac", name:"Pompes à chaleur air-eau"},
+  {id:"ssc", name:"Solaire combiné"},
+  {id:"cet", name:"Ballons thermodynamiques"},
+  {id:"acc", name:"Accessoires"}
+];
+const MORE = {
+  clim:"Autres marques sur devis : Airwell (multi-split YDZB, jusqu'à 5 unités intérieures), Blaupunkt, Bosch, Daikin, Atlantic, Ariston, Beko. Écrivez votre besoin dans votre demande.",
+  pac:"Autres modèles sur devis : LG Therma V Hydrosplit R32 (bi-bloc), Atlantic Alfea Excellia. Écrivez votre besoin dans votre demande."
+};
+/* Un produit = une fiche. Les variantes n'apparaissent que si leur prix diffère. */
+const P = [
+  {id:"mitsu", fam:"clim", img:"img/multi.jpg", name:"Mitsubishi Electric tri-split", model:"Groupe extérieur MXZ-3F54VF (série M), 3 unités intérieures",
+   keys:"5,4 kW froid · 7,0 kW chaud · A+++ en froid",
+   status:"ferme", opts:[{label:"Ensemble tri-split", price:2600}],
+   specs:[["Puissance froid","5,4 kW (de 2,9 à 6,8 kW)"],["Puissance chaud","7,0 kW (de 2,6 à 9,0 kW)"],["SEER, classe froid","8,52, A+++"],["SCOP, classe chaud","4,6, A++"],["Plage de fonctionnement","Froid de −10 à +46 °C, chaud de −15 à +24 °C"],["Fluide","R32"],["Alimentation","Monophasé 230 V"],["Groupe extérieur","710 × 840 × 330 mm, 58 kg"],["Unités intérieures","3 unités, modèles précisés sur le devis"]],
+   src:"Fiche technique Mitsubishi Electric MXZ-3F54VF"},
+  {id:"qlima", fam:"clim", img:"img/split.jpg", name:"Qlima SCM 52 Multi", model:"Tri-split prêt à poser, 3 unités murales (1 × 2,5 kW et 2 × 3,2 kW)",
+   keys:"3 pièces · A++ en froid · A+ en chaud",
+   status:"ferme", opts:[{label:"Ensemble tri-split", price:1550}],
+   specs:[["Unités intérieures","SCM 5225 (2,5 kW) et 2 × SCM 5232 (3,2 kW)"],["SEER, classe froid","6,5, A++"],["SCOP, classe chaud","4,0, A+"],["Puissance de dimensionnement","7,9 kW en froid, 6,1 kW en chaud"],["Groupe extérieur","49,1 kg"],["Garantie fabricant","3 ans, compresseur 5 ans"]],
+   src:"Fiche produit Qlima SCM 52 Multi. Équivalent Thaleos possible au même prix, sur devis."},
+  {id:"pac48", fam:"pac", img:"img/bibloc.jpg", name:"Pompe à chaleur air-eau 4 à 8 kW", model:"Haier, Atlantic, Thaleos ou Samsung",
+   keys:"Chauffage, eau chaude selon modèle",
+   status:"ferme", opts:[{label:"4 à 8 kW", price:2900}],
+   specs:[["Puissance","4 à 8 kW selon le modèle"],["Marques","Haier, Atlantic, Thaleos, Samsung"],["Fiche technique","Envoyée avec le devis, selon la marque choisie"]],
+   src:"Le modèle exact dépend du stock : nous le confirmons avant toute commande."},
+  {id:"pac916", fam:"pac", img:"img/bibloc.jpg", name:"Pompe à chaleur air-eau 9 à 16 kW", model:"Plusieurs marques disponibles",
+   keys:"Grandes surfaces ou maisons peu isolées",
+   status:"indic", opts:[{label:"9 à 16 kW", price:3200}],
+   specs:[["Puissance","9 à 16 kW selon le modèle"],["Marques","Plusieurs marques disponibles, au choix sur devis"],["Fiche technique","Envoyée avec le devis, selon la marque choisie"]],
+   src:"Prix indicatif tant que la marque n'est pas confirmée."},
+  {id:"lg", fam:"pac", img:"img/mono27.jpg", name:"LG Therma V Monobloc S triphasé", model:"Pompe à chaleur air-eau monobloc R32, 12, 14 ou 16 kW",
+   keys:"Triphasé · eau jusqu'à 65 °C · jusqu'à −25 °C",
+   status:"ferme", opts:[{label:"12, 14 ou 16 kW (à préciser)", price:2500}],
+   specs:[["Puissances","12, 14 ou 16 kW"],["Alimentation","Triphasé"],["Type","Monobloc : aucune liaison frigorifique à réaliser"],["Température d'eau","Jusqu'à 65 °C"],["Fonctionnement","Jusqu'à −25 °C extérieur"],["Fluide","R32"]],
+   src:"Fiches LG Therma V R32 Monobloc S."},
+  {id:"airwell", fam:"pac", img:"img/mono27.jpg", name:"Airwell Wellea M DF HT 26 kW", model:"Pompe à chaleur air-eau monobloc haute température R290 (BDHX-260R)",
+   keys:"Triphasé · eau jusqu'à 85 °C · A+++",
+   status:"ferme", opts:[{label:"26 kW", price:5500}],
+   specs:[["Puissance nominale","26 kW (gamme : 26, 30, 35 et 39 kW)"],["Alimentation","Triphasé 380-415 V"],["Température d'eau","Jusqu'à 85 °C, eau chaude sanitaire jusqu'à 70 °C (option)"],["Fonctionnement en chauffage","De −25 à +43 °C extérieur"],["SCOP (climat tempéré)","4,95 à 35 °C, 3,84 à 55 °C"],["Fluide","R290 (propane), 2,9 kg"],["Inclus","Télécommande RCW31 ; cascade possible jusqu'à 6 unités"]],
+   src:"Fiche produit Airwell Wellea M DF HT, octobre 2025."},
+  {id:"pana", fam:"pac", img:"img/aio.jpg", name:"Panasonic Aquarea All in One", model:"Génération L, R290, ballon d'eau chaude intégré de 185 L",
+   keys:"Chauffage + eau chaude en un seul meuble",
+   status:"ferme", opts:[{label:"5 ou 7 kW", price:3500},{label:"9 kW et plus", price:3800}],
+   specs:[["Puissances","5, 7 ou 9 kW (12 à 16 kW sur demande)"],["Ballon d'eau chaude","185 L intégré à l'unité intérieure"],["Références (5 kW)","Groupe WH-WDG05LE5 et unité intérieure WH-ADC0509L3E5"],["Appoint électrique","3 kW (version 6 kW sur demande)"],["Classe énergétique","A+++ en chauffage à 35 °C (climat moyen)"],["Fonctionnement","Jusqu'à −25 °C extérieur"],["Fluide","R290 (propane)"],["Encombrement au sol","Environ 600 × 600 mm"],["Connexion","Wi-Fi intégré"]],
+   src:"Documentation Panasonic Aquarea Génération L."},
+  {id:"ssc", fam:"ssc", img:"img/ssc.jpg", name:"Système solaire combiné", model:"Capteurs solaires, ballon de stockage et régulation",
+   keys:"Chauffage + eau chaude solaire",
+   status:"indic", opts:[{label:"Kit complet", price:3000}],
+   specs:[["Composition","Capteurs solaires thermiques, ballon de stockage, régulation"],["Usage","Chauffage et eau chaude sanitaire"],["Appoint","Chaudière, pompe à chaleur ou électrique"],["Aides (France)","Certificats d'économie d'énergie, fiche BAR-TH-143, en maison existante"],["Dimensionnement","Selon le logement, sur devis"]],
+   src:"Prix indicatif tant que la marque n'est pas confirmée."},
+  {id:"cet", fam:"cet", img:"img/cet.jpg", name:"Ballon thermodynamique 200 L", model:"Chauffe-eau à pompe à chaleur, monophasé",
+   keys:"Eau chaude sanitaire",
+   status:"indic", opts:[{label:"200 L", price:1200}],
+   specs:[["Capacité","200 L"],["Principe","Chauffe l'eau en récupérant la chaleur de l'air"],["Alimentation","Monophasé"],["Fiche technique","Envoyée avec le devis, selon la marque choisie"]],
+   src:"Prix indicatif tant que la marque n'est pas confirmée."},
+  {id:"gou", fam:"acc", img:null, name:"Goulotte 80 mm", model:"Carton de goulotte pour liaisons frigorifiques",
+   keys:"Idéal pour une première commande",
+   status:"ferme", opts:[{label:"1 carton", price:95}],
+   specs:[["Section","80 mm"],["Conditionnement","Carton"]],
+   src:"Contenu exact du carton précisé sur devis."}
+];
+
+const eur = n => n.toLocaleString("fr-FR") + " €";
+const $ = s => document.querySelector(s);
+const tagHTML = s => s==="ferme" ? '<span class="tag ferme">Prix ferme</span>' : '<span class="tag indic">Prix indicatif</span>';
+const fromPrice = p => Math.min(...p.opts.map(o=>o.price));
+
+/* Filtres */
+let fam = "all";
+function renderTabs(){
+  const all = [{id:"all",name:"Tout"}].concat(FAMILIES);
+  $("#tabs").innerHTML = all.map(f=>{
+    const n = f.id==="all" ? P.length : P.filter(p=>p.fam===f.id).length;
+    return `<button type="button" data-f="${f.id}" aria-pressed="${f.id===fam}">${f.name}<span class="c">${n}</span></button>`;
+  }).join("");
+}
+function renderGrid(){
+  const list = P.filter(p=>fam==="all"||p.fam===fam);
+  $("#grid").innerHTML = list.map(p=>{
+    const f = FAMILIES.find(x=>x.id===p.fam).name;
+    const pre = p.opts.length>1 ? "dès " : "≈ ";
+    const img = p.img ? `<img src="${p.img}" alt="" loading="lazy" width="640" height="400">` : `<div style="aspect-ratio:16/10;background:var(--givre-clair)"></div>`;
+    return `<button type="button" class="prod" data-id="${p.id}" aria-label="${p.name}, voir la fiche">
+      ${img}<div class="body"><span class="fam">${f}</span><h3>${p.name}</h3><span class="keys">${p.keys}</span>
+      <div class="foot"><span class="price">${pre}${eur(fromPrice(p))}<small>TTC livré</small></span><span class="fam">Sur devis</span></div></div></button>`;
+  }).join("");
+  const m = MORE[fam];
+  $("#more").hidden = !m; $("#more").textContent = m || "";
+}
+$("#tabs").addEventListener("click", e=>{const b=e.target.closest("button"); if(!b) return; fam=b.dataset.f; renderTabs(); renderGrid();});
+$("#grid").addEventListener("click", e=>{const b=e.target.closest(".prod"); if(b) openSheet(b.dataset.id);});
+
+/* Fiche */
+const dlg = $("#sheet"); let qty = 1, current = null;
+function openSheet(id){
+  const p = P.find(x=>x.id===id); current = p; qty = 1;
+  const opts = p.opts.map((o,i)=>`<label class="opt"><input type="radio" name="opt" value="${i}" ${i===0?"checked":""}><span class="l">${o.label}</span><span class="p">≈ ${eur(o.price)}</span></label>`).join("");
+  $("#sheetBody").innerHTML = `
+    <div class="pic">${p.img?`<img src="${p.img}" alt="">`:""}</div>
+    <div class="info">
+      <h3 id="sheetTitle">${p.name}</h3><p class="model">${p.model}</p>
+      <table class="specs"><tbody>${p.specs.map(s=>`<tr><th scope="row">${s[0]}</th><td>${s[1]}</td></tr>`).join("")}</tbody></table>
+      
+      <div class="opts" role="radiogroup" aria-label="Choisir la version">${opts}</div>
+      <p class="fine">Matériel neuf en carton d'origine. Prix indicatif TTC, livraison comprise : il varie selon la marque et le modèle, le prix exact vous est donné sur devis.</p>
+      <div class="add">
+        <div class="qty"><button type="button" id="qm" aria-label="Retirer une unité">−</button><output id="qv" aria-live="polite">1</output><button type="button" id="qp" aria-label="Ajouter une unité">+</button></div>
+        <button type="button" class="primary" id="addBtn">Ajouter à ma demande</button>
+      </div>
+    </div>
+    <button class="close" id="closeSheet" aria-label="Fermer la fiche">×</button>`;
+  $("#qm").onclick=()=>{qty=Math.max(1,qty-1);$("#qv").textContent=qty;};
+  $("#qp").onclick=()=>{qty=Math.min(50,qty+1);$("#qv").textContent=qty;};
+  $("#closeSheet").onclick=()=>dlg.close();
+  $("#addBtn").onclick=()=>{
+    const i = +dlg.querySelector('input[name="opt"]:checked').value;
+    addLine(p, i, qty); dlg.close(); toast(`Ajouté à votre demande : ${p.name}`);
+  };
+  dlg.showModal();
+}
+dlg.addEventListener("click", e=>{ if(e.target===dlg) dlg.close(); });
+
+/* Demande */
+let lines = [];
+try{ lines = JSON.parse(localStorage.getItem("stlvi-demande")||"[]"); }catch(e){ lines=[]; }
+function save(){ try{ localStorage.setItem("stlvi-demande", JSON.stringify(lines)); }catch(e){} }
+function addLine(p,i,q){
+  const key = p.id+":"+i, l = lines.find(x=>x.key===key);
+  if(l) l.q += q; else lines.push({key, id:p.id, i, q});
+  save(); renderLines();
+}
+function renderLines(){
+  const n = lines.reduce((s,l)=>s+l.q,0);
+  $("#count").textContent = n;
+  if(!lines.length){
+    $("#lines").innerHTML = '<p class="empty">Votre demande est vide. Ajoutez des produits depuis le catalogue, ou décrivez directement votre besoin ci-dessous.</p>';
+    return;
+  }
+  let tot = 0;
+  $("#lines").innerHTML = lines.map((l,k)=>{
+    const p = P.find(x=>x.id===l.id), o = p.opts[l.i]; tot += o.price*l.q;
+    return `<div class="line"><b>${l.q} × ${p.name}</b><button class="rm" data-k="${k}">Retirer</button><span class="sub">${o.label} · ≈ ${eur(o.price*l.q)} TTC</span></div>`;
+  }).join("") + `<div class="total"><span>Total indicatif</span><span>≈ ${eur(tot)} TTC</span></div>`;
+}
+$("#lines").addEventListener("click", e=>{const b=e.target.closest(".rm"); if(!b) return; lines.splice(+b.dataset.k,1); save(); renderLines();});
+
+const drawer=$("#drawer"), scrim=$("#scrim");
+function openBasket(){ drawer.classList.add("open"); scrim.classList.add("open"); drawer.setAttribute("aria-hidden","false"); $("#closeBasket").focus(); }
+function closeBasket(){ drawer.classList.remove("open"); scrim.classList.remove("open"); drawer.setAttribute("aria-hidden","true"); $("#openBasket").focus(); }
+$("#openBasket").onclick=openBasket; $("#closeBasket").onclick=closeBasket; scrim.onclick=closeBasket;
+document.addEventListener("keydown", e=>{ if(e.key==="Escape" && drawer.classList.contains("open")) closeBasket(); });
+
+function buildText(){
+  const free = $("#free").value.trim();
+  if(!lines.length && !free){ toast("Ajoutez un produit ou décrivez votre besoin avant d'envoyer."); $("#free").focus(); return null; }
+  const who=$("#who").value.trim(), where=$("#where").value.trim();
+  let t = "Bonjour STLVI, je souhaite un devis.\n";
+  if(who) t += "De : "+who+"\n";
+  if(where) t += "Chantier : "+where+"\n";
+  lines.forEach(l=>{ const p=P.find(x=>x.id===l.id), o=p.opts[l.i]; t += `- ${l.q} × ${p.name} (${o.label}), ≈ ${eur(o.price)} TTC l'unité\n`; });
+  if(free) t += "Précisions : "+free+"\n";
+  return t;
+}
+$("#send").onclick=()=>{
+  const t = buildText(); if(t===null) return;
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(t), "_blank", "noopener");
+};
+$("#sendMail").onclick=e=>{
+  e.preventDefault();
+  const t = buildText(); if(t===null) return;
+  location.href = "mailto:"+MAIL+"?subject="+encodeURIComponent("Demande de devis STLVI")+"&body="+encodeURIComponent(t);
+};
+
+let tt; function toast(m){ const el=$("#toast"); el.textContent=m; el.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>el.classList.remove("show"),2600); }
+
+/* Lien actif dans le menu */
+const links=[...document.querySelectorAll(".nav a")];
+const io=new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting) links.forEach(a=>a.setAttribute("aria-current", a.getAttribute("href")==="#"+en.target.id ? "true":"false")); }),{rootMargin:"-45% 0px -50% 0px"});
+["produits","livraison","contact"].forEach(id=>io.observe(document.getElementById(id)));
+
+renderTabs(); renderGrid(); renderLines();
+</script>
+</body>
+</html>
